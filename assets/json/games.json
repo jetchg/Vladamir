@@ -5,6 +5,12 @@
     "file": "index.html",
     "img": "meta/apple-touch-icon.png"
   },
+  {
+    "name": "Now gg",
+    "root": "now gg",
+    "file": "nowgg.html",
+    "img": "nowgg.jpeg"
+  },
     {
     "name": "mcje (IE ONLY!)",
     "root": "mcje",
