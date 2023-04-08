@@ -6,7 +6,7 @@ body[theme="default"] {
   --text: white;
   --text-secondary: black;
 }
-body[theme="poop"] {
+body[theme="Brown"] {
   --background: black;
   --theme: brown;
   --text: white;
