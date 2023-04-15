@@ -39,7 +39,7 @@
    
        <button id="myButtonx">Play Now!! (New better games)</button>
       <style>
-  #myButton {
+  #myButtonx {
     background-color: transparent;
     color: #fff;
     border: 2px solid #fff;
@@ -50,7 +50,7 @@
     overflow: hidden;
   }
   
-  #myButton::before {
+  #myButtonx::before {
     content: '';
     position: absolute;
     top: 50%;
@@ -63,14 +63,14 @@
     transition: width 0.3s ease-out, height 0.3s ease-out;
   }
   
-  #myButton:hover::before {
+  #myButtonx:hover::before {
     width: 200%;
     height: 200%;
   }
 </style>
 
 <script>
-  const button = document.querySelector('#myButton');
+  const button = document.querySelector('#myButtonx');
   button.addEventListener('click', () => {
     const newWindow = window.open('about:blank', '_blank');
     const iframe = document.createElement('iframe');
