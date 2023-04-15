@@ -38,12 +38,43 @@
       
    
        <button id="myButtonx">Play Now!! (New better games)</button>
-      <script>
-  const button = document.querySelector('#myButtonx');
+      <style>
+  #myButton {
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  #myButton::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background-color: #fff;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.3s ease-out, height 0.3s ease-out;
+  }
+  
+  #myButton:hover::before {
+    width: 200%;
+    height: 200%;
+  }
+</style>
+
+<script>
+  const button = document.querySelector('#myButton');
   button.addEventListener('click', () => {
     const newWindow = window.open('about:blank', '_blank');
     const iframe = document.createElement('iframe');
-    iframe.src = 'https://infmapi.github.io/infmapr.github.io/projects';
+    iframe.src = 'https://www.example.com';
     iframe.style.width = '100%';
     iframe.style.height = '100%';
     iframe.style.position = 'absolute';
