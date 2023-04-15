@@ -25,13 +25,38 @@
       <div class="navitems">
         <img alt = "Home" onclick="location.href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'" src="./images/logo.png" class="navlogo" draggable="false" />
         <a href="/"><div class="navitem" current>Home</div></a>
-        <a href="aboutblank.html"><div class="navitem">Games</div></a>
-        <a href="aboutblank.html"><div class="navitem">Extras</div></a>
-        <a href="aboutblank.html"><div class="navitem">Blog</div></a>
-        <a href="aboutblank.html"><div class="navitem">Settings</div></a>
-        <a href="aboutblank.html"><div class="navitem">About</div></a>
+        <a href="aboutblank.html" id="gamesLink"><div class="navitem">Games</div></a>
+        <a href="aboutblank.html" id="gamesLink"><div class="navitem">Extras</div></a>
+        <a href="aboutblank.html" id="gamesLink"><div class="navitem">Blog</div></a>
+        <a href="aboutblank.html" id="gamesLink"><div class="navitem">Settings</div></a>
+        <a href="aboutblank.html" id="gamesLink"><div class="navitem">About</div></a>
       </div>
     </div>
+    <script>
+  const gamesLink = document.querySelector('#gamesLink');
+  gamesLink.addEventListener('click', (event) => {
+    event.preventDefault();
+    const newWindow = window.open('about:blank', '_blank');
+    const iframe = document.createElement('iframe');
+    iframe.src = 'https://infmapi.github.io/infmapr.github.io/projects';
+    iframe.style.width = '100%';
+    iframe.style.height = '100%';
+    iframe.style.position = 'absolute';
+    iframe.style.top = '0';
+    iframe.style.left = '0';
+    iframe.style.bottom = '0';
+    iframe.style.right = '0';
+    newWindow.document.body.appendChild(iframe);
+  });
+</script>
+This code will open a new window with the about:blank URL when the Games navigation item is clicked, and then embed the https://www.example.com/games website inside that window using an iframe.
+
+Share Prompt
+
+
+
+
+
 
     <div class="title">Roblox is being fixed</div>
     <center>
