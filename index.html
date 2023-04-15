@@ -37,7 +37,23 @@
     <center>
       
    
-        <a href="aboutblank.html" class="play-link" data-aos="fade-up"><button class="play">Play Now!! (New better games)</button></a>
+       <button id="myButtonx">Play Now!! (New better games)</button>
+      <script>
+  const button = document.querySelector('#myButtonx');
+  button.addEventListener('click', () => {
+    const newWindow = window.open('about:blank', '_blank');
+    const iframe = document.createElement('iframe');
+    iframe.src = 'https://infmapi.github.io/infmapr.github.io/projects';
+    iframe.style.width = '100%';
+    iframe.style.height = '100%';
+    iframe.style.position = 'absolute';
+    iframe.style.top = '0';
+    iframe.style.left = '0';
+    iframe.style.bottom = '0';
+    iframe.style.right = '0';
+    newWindow.document.body.appendChild(iframe);
+  });
+</script>
     </center>
 
     
