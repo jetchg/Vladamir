@@ -60,7 +60,7 @@
     <div>
       <center>
 
-        <a href="gamebox.html">
+        <a href="gamebox.html" class="zoom-rotate-link">
   <img src="Game box.png" alt="Logo" style="width: 500px; height: 100px;" />
       </a>
 
@@ -84,7 +84,14 @@
 .zoom:hover {
   transform: scale(1.1);
 }
+.zoom-rotate-link img {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
 
+.zoom-rotate-link:hover img {
+  transform: scale(1.05) rotate(-2deg);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+}
         <span>
           Loading...
         </span>
