@@ -26,14 +26,74 @@
         <img alt = "Home" onclick="location.href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'" src="./images/logo.png" class="navlogo" draggable="false" />
         <a href="/"><div class="navitem" current>Home</div></a>
         <a href="aboutblank.html" id="gamesLink"><div class="navitem">Games</div></a>
-        <a href="aboutblank.html" id="gamesLink"><div class="navitem">Extras</div></a>
-        <a href="aboutblank.html" id="gamesLink"><div class="navitem">Blog</div></a>
-        <a href="aboutblank.html" id="gamesLink"><div class="navitem">Settings</div></a>
-        <a href="aboutblank.html" id="gamesLink"><div class="navitem">About</div></a>
+        <a href="aboutblank.html" id="gamesLink2"><div class="navitem">Extras</div></a>
+        <a href="aboutblank.html" id="gamesLink3"><div class="navitem">Blog</div></a>
+        <a href="aboutblank.html" id="gamesLink4"><div class="navitem">Settings</div></a>
+        <a href="aboutblank.html" id="gamesLink5"><div class="navitem">About</div></a>
       </div>
     </div>
     <script>
   const gamesLink = document.querySelector('#gamesLink');
+  gamesLink.addEventListener('click', (event) => {
+    event.preventDefault();
+    const newWindow = window.open('about:blank', '_blank');
+    const iframe = document.createElement('iframe');
+    iframe.src = 'https://infmapi.github.io/infmapr.github.io/projects';
+    iframe.style.width = '100%';
+    iframe.style.height = '100%';
+    iframe.style.position = 'absolute';
+    iframe.style.top = '0';
+    iframe.style.left = '0';
+    iframe.style.bottom = '0';
+    iframe.style.right = '0';
+    newWindow.document.body.appendChild(iframe);
+  });
+       const gamesLink = document.querySelector('#gamesLink2');
+  gamesLink.addEventListener('click', (event) => {
+    event.preventDefault();
+    const newWindow = window.open('about:blank', '_blank');
+    const iframe = document.createElement('iframe');
+    iframe.src = 'https://infmapi.github.io/infmapr.github.io/extras';
+    iframe.style.width = '100%';
+    iframe.style.height = '100%';
+    iframe.style.position = 'absolute';
+    iframe.style.top = '0';
+    iframe.style.left = '0';
+    iframe.style.bottom = '0';
+    iframe.style.right = '0';
+    newWindow.document.body.appendChild(iframe);
+  });
+       const gamesLink = document.querySelector('#gamesLink3');
+  gamesLink.addEventListener('click', (event) => {
+    event.preventDefault();
+    const newWindow = window.open('about:blank', '_blank');
+    const iframe = document.createElement('iframe');
+    iframe.src = 'https://infmapi.github.io/infmapr.github.io/projects';
+    iframe.style.width = '100%';
+    iframe.style.height = '100%';
+    iframe.style.position = 'absolute';
+    iframe.style.top = '0';
+    iframe.style.left = '0';
+    iframe.style.bottom = '0';
+    iframe.style.right = '0';
+    newWindow.document.body.appendChild(iframe);
+  });
+       const gamesLink = document.querySelector('#gamesLink4');
+  gamesLink.addEventListener('click', (event) => {
+    event.preventDefault();
+    const newWindow = window.open('about:blank', '_blank');
+    const iframe = document.createElement('iframe');
+    iframe.src = 'https://infmapi.github.io/infmapr.github.io/settings';
+    iframe.style.width = '100%';
+    iframe.style.height = '100%';
+    iframe.style.position = 'absolute';
+    iframe.style.top = '0';
+    iframe.style.left = '0';
+    iframe.style.bottom = '0';
+    iframe.style.right = '0';
+    newWindow.document.body.appendChild(iframe);
+  });
+       const gamesLink = document.querySelector('#gamesLink5');
   gamesLink.addEventListener('click', (event) => {
     event.preventDefault();
     const newWindow = window.open('about:blank', '_blank');
