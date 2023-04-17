@@ -25,102 +25,10 @@
       <div class="navitems">
         <img alt = "Home" onclick="location.href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'" src="./images/logo.png" class="navlogo" draggable="false" />
         <a href="/"><div class="navitem" current>Home</div></a>
-        <button id="gamesLink class="navitem animated-button">Games</button>
-       <button id="gamesLink2"  class="navitem animated-button">Extras</button>
-      <button id="gamesLink3"  class="navitem animated-button">Blog</button>
-       <button id="gamesLink4"  class="navitem animated-button">Settings</button>
-        
-      </div>
+      
     </div>
-    <script>
-  const gamesLink = document.querySelector('#gamesLink');
-  gamesLink.addEventListener('click', (event) => {
-    event.preventDefault();
-    const newWindow = window.open('about:blank', '_blank');
-    const iframe = document.createElement('iframe');
-    iframe.src = 'https://infmapi.github.io/infmapr.github.io/projects';
-    iframe.style.width = '100%';
-    iframe.style.height = '100%';
-    iframe.style.position = 'absolute';
-    iframe.style.top = '0';
-    iframe.style.left = '0';
-    iframe.style.bottom = '0';
-    iframe.style.right = '0';
-    newWindow.document.body.appendChild(iframe);
-  });
-       const gamesLink = document.querySelector('#gamesLink2');
-  gamesLink.addEventListener('click', (event) => {
-    event.preventDefault();
-    const newWindow = window.open('about:blank', '_blank');
-    const iframe = document.createElement('iframe');
-    iframe.src = 'https://infmapi.github.io/infmapr.github.io/extras';
-    iframe.style.width = '100%';
-    iframe.style.height = '100%';
-    iframe.style.position = 'absolute';
-    iframe.style.top = '0';
-    iframe.style.left = '0';
-    iframe.style.bottom = '0';
-    iframe.style.right = '0';
-    newWindow.document.body.appendChild(iframe);
-  });
-       const gamesLink = document.querySelector('#gamesLink3');
-  gamesLink.addEventListener('click', (event) => {
-    event.preventDefault();
-    const newWindow = window.open('about:blank', '_blank');
-    const iframe = document.createElement('iframe');
-    iframe.src = 'https://infmapi.github.io/infmapr.github.io/projects';
-    iframe.style.width = '100%';
-    iframe.style.height = '100%';
-    iframe.style.position = 'absolute';
-    iframe.style.top = '0';
-    iframe.style.left = '0';
-    iframe.style.bottom = '0';
-    iframe.style.right = '0';
-    newWindow.document.body.appendChild(iframe);
-  });
-       const gamesLink = document.querySelector('#gamesLink4');
-  gamesLink.addEventListener('click', (event) => {
-    event.preventDefault();
-    const newWindow = window.open('about:blank', '_blank');
-    const iframe = document.createElement('iframe');
-    iframe.src = 'https://infmapi.github.io/infmapr.github.io/settings';
-    iframe.style.width = '100%';
-    iframe.style.height = '100%';
-    iframe.style.position = 'absolute';
-    iframe.style.top = '0';
-    iframe.style.left = '0';
-    iframe.style.bottom = '0';
-    iframe.style.right = '0';
-    newWindow.document.body.appendChild(iframe);
-  });
-
-    </script>
-    <style>
-  .animated-button {
-    position: relative;
-    transition: transform 0.2s ease-in-out;
-  }
-
-  .animated-button:hover {
-    animation: shake 0.5s;
-    animation-iteration-count: 1;
-  }
-
-  @keyframes shake {
-    0% { transform: translate(0, 0); }
-    10% { transform: translate(-10px, 0); }
-    20% { transform: translate(10px, 0); }
-    30% { transform: translate(-10px, 0); }
-    40% { transform: translate(10px, 0); }
-    50% { transform: translate(-10px, 0); }
-    60% { transform: translate(10px, 0); }
-    70% { transform: translate(-10px, 0); }
-    80% { transform: translate(10px, 0); }
-    90% { transform: translate(-10px, 0); }
-    100% { transform: translate(0, 0); }
-  }
-</style>
-
+    
+    
     <div class="title">Roblox is being fixed</div>
     <center>
       
